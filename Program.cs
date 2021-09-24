@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructuresStackandQueue
+namespace DataStructuresStackandQueue.cs
 {
     class Program
     {
@@ -16,13 +16,17 @@ namespace DataStructuresStackandQueue
             //list.AddLast(70);
 
             LinkedStack stack = new LinkedStack();
-            stack.LinkPush(70);
-            stack.LinkPush(30);
-            stack.LinkPush(56);
-            stack.LinkStackDisplay();
-            //stack.Peek();
-            //stack.Pop();
-            //stack.IsEmpty();
+            //stack.LinkPush(70);
+            //stack.LinkPush(30);
+            //stack.LinkPush(56);
+            //stack.LinkStackDisplay();
+            stack.Push(70);
+            stack.Push(30);
+            stack.Push(56);
+            stack.Display();
+            stack.Peek();
+            stack.Pop();
+            stack.IsEmpty();
             //CustomLinkedList obj1 = new CustomLinkedList();
             //obj1.InsertLast(70);
             //obj1.InsertLast(56);
