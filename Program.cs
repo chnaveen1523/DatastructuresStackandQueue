@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructuresStackandQueue.cs
+namespace DataStructuresStackandQueue
 {
     class Program
     {
@@ -15,15 +15,19 @@ namespace DataStructuresStackandQueue.cs
             //list.AddLast(30);
             //list.AddLast(70);
 
-            LinkQueue queue = new LinkQueue();
-            queue.Enqueue(56);
-            queue.Enqueue(30);
-            queue.Enqueue(70);
-            Console.WriteLine("The queue before deletion:");
-            queue.Display();
-            queue.Dequeue();
-            Console.WriteLine("The queue after deletion:");
-            queue.Display();
+            LinkedStack stack = new LinkedStack();
+            stack.LinkPush(70);
+            stack.LinkPush(30);
+            stack.LinkPush(56);
+            stack.LinkStackDisplay();
+            //stack.Peek();
+            //stack.Pop();
+            //stack.IsEmpty();
+            //CustomLinkedList obj1 = new CustomLinkedList();
+            //obj1.InsertLast(70);
+            //obj1.InsertLast(56);
+            //obj1.InsertLast(30);
+            //obj1.Display();
             Console.ReadLine();
         }
     }
